@@ -1,6 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import EventPlaces from "./pages/places";
+import NewPlace from "./pages/NewPlace";
 import NavLinks from "./UIElements/NavLink";
 
 const App = () => {
@@ -12,9 +13,9 @@ const App = () => {
           <Route path="/" exact>
             <EventPlaces />
           </Route>
-          {/* <Route path="/places/new" exact>
+          <Route path="/places/new" exact>
             <NewPlace />
-          </Route> */}
+          </Route>
         </Switch>
       </main>
     </Router>
